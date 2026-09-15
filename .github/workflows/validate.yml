@@ -1,0 +1,24 @@
+name: Validate Submission
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate required files
+        run: |
+          test -f submission.yaml
+          test -f README.md
+          test -f docs/problem-statement.md
+          test -f docs/solution-overview.md
+          test -f docs/architecture.md
+          test -f docs/setup-guide.md
+          test -f src/app.py
+          test -f demo/demo-video-link.txt
+          test -f demo/live-demo-url.txt
+          test -f presentation/slides.pptx || test -f presentation/slides.pdf
+          echo "Required submission structure is present."

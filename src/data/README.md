@@ -1,0 +1,1 @@
+All data in this directory is synthetic and created for demonstration. Never place real patient data or credentials in the repository.

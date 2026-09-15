@@ -1,0 +1,31 @@
+team:
+  name: "YOUR TEAM NAME"
+  track: "Pharma & Biotech"
+  lead:
+    name: "Milind Soni"
+    email: "YOUR EMAIL"
+  members:
+    - name: "Meera Patel"
+      email: "EMAIL"
+    - name: "Tirth Patel"
+      email: "EMAIL"
+
+submission:
+  title: "TrialGuard AI"
+  problem_statement: >
+    Clinical trial risk teams need earlier visibility into protocol deviations such as
+    missed visits, incorrect dosing and prohibited co-medications across many sites.
+    TrialGuard AI compares synthetic patient visit records against a machine-readable
+    protocol, detects deviations, classifies severity, scores site risk using leading
+    indicators, and prepares CAPA-ready mitigation reports.
+  solution_summary: >
+    TrialGuard AI combines deterministic protocol rules with an AI-assisted explanation
+    workflow exposed to IBM Bob through a custom MCP server. Risk managers can upload
+    records, inspect patient-level deviations, prioritize high-risk sites, and generate
+    evidence-linked CAPA drafts without exposing real patient data.
+  key_features:
+    - "Protocol-aware detection of missed visits, dose mismatches and prohibited medications"
+    - "Configurable Major / Minor / Administrative severity classification"
+    - "Leading-indicator site risk scoring and risk-tier dashboard"
+    - "CAPA-ready report generation with recommended mitigation actions"
+    - "IBM Bob integration through a project MCP server and reusable clinical-risk skill"

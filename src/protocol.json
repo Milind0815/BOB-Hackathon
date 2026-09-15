@@ -1,0 +1,31 @@
+{
+  "study_id": "TG-001",
+  "version": "1.0",
+  "visits": [
+    {"visit": "V1", "target_day": 0, "window_before": 0, "window_after": 3},
+    {"visit": "V2", "target_day": 14, "window_before": 3, "window_after": 3},
+    {"visit": "V3", "target_day": 28, "window_before": 3, "window_after": 3},
+    {"visit": "V4", "target_day": 56, "window_before": 5, "window_after": 5}
+  ],
+  "dose": {
+    "expected_mg": 100,
+    "allowed_mg": [100]
+  },
+  "prohibited_medications": [
+    "Rifampicin",
+    "Warfarin"
+  ],
+  "severity_rules": {
+    "major": [
+      "prohibited_medication",
+      "dose_mismatch"
+    ],
+    "minor": [
+      "missed_visit",
+      "out_of_window_visit"
+    ],
+    "administrative": [
+      "missing_noncritical_field"
+    ]
+  }
+}
